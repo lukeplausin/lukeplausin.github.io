@@ -36,14 +36,67 @@
 
   </head>
   <body>
+    <!-- Contact Me modal form -->
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        // Set form action (I'm doing it in javascript to stop crawlers from
+        // spamming my email address)
+        $(document).find("form#contactForm").attr("action",
+          "https://" + "forms" + "pree.io/" + "lu" + "ke." + "plaus" + "in@g" + "mail.c" + "om"
+        )
+    });
+    </script>
+    <div id="contactForm" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="contactForm" class="form" role="form" method="POST">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Contact Me</h4>
+          </div>
+          <div class="modal-body">
+            <!--Form controls here-->
+            <div class="form-group">
+              <label for="name">Your name:</label>
+              <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="form-group">
+              <label class="" for="email">Reply e-mail address:</label>
+              <input type="email" class="form-control" name="_replyto" id="email">
+
+            </div>
+            <div class="form-group">
+              <label class="" for="message">Your message:</label>
+              <textarea class="form-control" name="message" rows="5" id="comment"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" action="submit">Send</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <!-- Main document starts here -->
     <div class="container">
       <div class="page-header">
         <h1>Luke Plausin</h1>
-        <p class="lead">Engineering Mathematics MEng, Bristol University 2013, 1st Class Hons.</p>
+        <div class="row">
+          <div class="col-sm-10">
+            <p class="lead">Engineering Mathematics MEng, Bristol University 2013, 1st Class Hons.</p>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactForm">Contact Me</button>
+          </div>
+        </div>
       </div>
 
+        </form>
+
       <h3>Links</h3>
-      <p>If you wish to contact me please do so via <a href="https://uk.linkedin.com/in/lukeplausin">LinkedIn</a>.</p>
+      <p>If you wish to contact me please do so via <a href="https://uk.linkedin.com/in/lukeplausin">LinkedIn, or the contact form on this site.</a>.</p>
         <div class="row">
           <div class="col-sm-4">
             <a href="https://uk.linkedin.com/in/lukeplausin" class="btn btn-block btn-social btn-linkedin">
