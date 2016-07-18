@@ -36,16 +36,24 @@
 
   </head>
   <body>
-    <!-- Contact Me modal form -->
     <script type="text/javascript">
-    $( document ).ready(function() {
-        // Set form action (I'm doing it in javascript to stop crawlers from
-        // spamming my email address)
-        $(document).find("form#contactForm").attr("action",
-          "https://" + "forms" + "pree.io/" + "lu" + "ke." + "plaus" + "in@g" + "mail.c" + "om"
-        )
-    });
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-80931735-1', 'auto');
+      ga('send', 'pageview');
+
+      $( document ).ready(function() {
+          // Set form action (in javascript to stop crawlers from
+          // spamming my email address)
+          $(document).find("form#contactForm").attr("action",
+            "https://" + "forms" + "pree.io/" + "lu" + "ke." + "plaus" + "in@g" + "mail.c" + "om"
+          )
+      });
     </script>
+    <!-- Contact Me modal form -->
     <div id="contactForm" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
